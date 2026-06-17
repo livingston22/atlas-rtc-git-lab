@@ -1,0 +1,5 @@
+dtb/dts/hi1910b/hi1910BL/hi1910B-asic-M150-B50.dts:61:	rtc@32 {
+dtb/dts/hi1910b/hi1910BL/hi1910B-asic-M100-B51.dts:69:	rtc@32 {
+dtb/dts/hi1910b/hi1910BL/hi1910B-default.dts:69:	rtc@32 {
+dtb/dts/hi1910b/hi1910BL/hi1910B-asic-M150-B51.dts:67:	rtc@32 {
+dtb/dts/hi1910b/hi1910BL/hi1910B-asic-M160-B51.dts:67:	rtc@32 {
