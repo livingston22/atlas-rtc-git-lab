@@ -187,6 +187,7 @@ static irqreturn_t rv8803_handle_irq(int irq, void *dev_id)
 
 static int rv8803_get_time(struct device *dev, struct rtc_time *tm)
 {
+	dev_info(dev, "Atlas RTC Git Lab: zyf rv8803_get_time called\n");
 	struct rv8803_data *rv8803 = dev_get_drvdata(dev);
 	u8 date1[7];
 	u8 date2[7];
@@ -228,6 +229,7 @@ static int rv8803_get_time(struct device *dev, struct rtc_time *tm)
 
 static int rv8803_set_time(struct device *dev, struct rtc_time *tm)
 {
+	dev_info(dev, "Atlas RTC Git Lab: zyf rv8803_set_time called\n");
 	struct rv8803_data *rv8803 = dev_get_drvdata(dev);
 	u8 date[7];
 	int ctrl, flags, ret;
@@ -509,6 +511,7 @@ static int rx8900_trickle_charger_init(struct rv8803_data *rv8803)
 static int rv8803_probe(struct i2c_client *client,
 			const struct i2c_device_id *id)
 {
+	dev_info(&client->dev, "Atlas RTC Git Lab: zyf rv8803_probe for Epson RX8900\n");
 	struct i2c_adapter *adapter = client->adapter;
 	struct rv8803_data *rv8803;
 	int err, flags;
